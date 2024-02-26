@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>INTENSE</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -426,7 +426,7 @@
     <!-- Image upload section -->
 
     <section class="my-20 flex items-center">
-      <form id="uploadForm" enctype="multipart/form-data" class=" shadow-xl p-8 rounded-md border mx-auto">
+      <form id="uploadForm" enctype="multipart/form-data" class=" shadow-xl py-5 px-2 md:p-8 rounded-md border mx-auto">
         <input
           type="file"
           id="fileInput"
@@ -438,12 +438,68 @@
       <div id="preview"></div>
     </section>
 
+    <!-- add user -->
+    <div class="container">
+      <h2>Add User</h2>
+      <form id="addUserForm">
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+              <label for="type">User Type:</label>
+              <select id="type" name="type" required>
+                  <option value="admin">Admin</option>
+                  <option value="user">User</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <label for="active">Active:</label>
+              <input type="checkbox" id="active" name="active" value="1" checked>
+          </div>
+          <div class="form-group">
+              <button type="submit" class="btn">Add User</button>
+          </div>
+      </form>
+  </div>
+  
+
+
+
+    <!-- Footer -->
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <nav>
+        <h6 class="footer-title">Services</h6> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Company</h6> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Legal</h6> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       // Function to fetch data using jQuery
       function fetchData() {
         // URL of the Numbers API
-        var url = "http://numbersapi.com/1/30/date?json";
+        var url = "http://localhost:3000/api/fetchData";
 
         // Making an AJAX request using jQuery
         $.ajax({
