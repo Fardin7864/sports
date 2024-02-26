@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div>
+      <header>
+        <!-- Navbar Start  -->
+        <div
+          class="navbar text-white lg:absolute bg-[#191919] lg:bg-transparent z-10"
+        >
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-transparent rounded-box w-52"
+              >
+                <li><a>HOME</a></li>
+                <li><a>ABOUT COACH</a></li>
+                <li><a>CONTACT US</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl"
+              ><img src="./upload_images/logo.png" alt=""
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="index.html">HOME</a></li>
+              <li class=" text-[#FDCC25]"><a href="about.html">ABOUT COACH</a></li>
+              <li><a>CONTACT US</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <!-- <a class="btn">Button</a> -->
+          </div>
+        </div>
+        <!-- Carousel -->
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="https://livedemo00.template-help.com/wt_51682/images/background-01-1920x750.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+                >❯</a
+              >
+            </div>
+            <!-- Texts on carousel -->
+            <div
+              class="absolute flex flex-col transform -translate-y-1/2 left-5 right-5 top-1/4 fade-up w-2/3 mx-auto font-bold"
+            >
+              <h1
+                class="lg:text-7xl md:text-3xl text-lg text-white text-center"
+              >
+                <i>NO PAIN NO GAIN</i>
+              </h1>
+              <p class="text-xl hidden lg:block text-white text-center md:mt-8">
+                Having a perfect body requires a lot of training. Nice-looking
+                body and powerful organism are interconnected – and we can help
+                you with both.
+              </p>
+              <div class="flex justify-center md:mt-10">
+                <button
+                  class="md:px-5 px-2 md:py-3 py-1 text-xs md:text-sm rounded-md btn-animate"
+                >
+                  GET STARTED
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="https://livedemo00.template-help.com/wt_51682/images/background-02-1920x750.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+                >❯</a
+              >
+            </div>
+            <div
+              class="absolute flex flex-col transform -translate-y-1/2 left-5 right-5 top-1/4 fade-up w-2/3 mx-auto font-bold"
+            >
+              <h1
+                class="lg:text-7xl md:text-3xl text-lg text-white text-center"
+              >
+                <i>NEVER GIVE UP</i>
+              </h1>
+              <p class="text-xl hidden lg:block text-white text-center md:mt-8">
+                Every bodybuilder requires a lot of dedication and effort to
+                shape his/her body into something to be proud of. We can give
+                you everything you need for
+              </p>
+              <div class="flex justify-center md:mt-10">
+                <button
+                  class="md:px-5 px-2 md:py-3 py-1 text-xs md:text-sm rounded-md btn-animate"
+                >
+                  GET STARTED
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="https://livedemo00.template-help.com/wt_51682/images/background-03-1920x750.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+                >❯</a
+              >
+            </div>
+            <!-- Texts on carousel -->
+            <div
+              class="absolute flex flex-col transform -translate-y-1/2 left-5 right-5 top-1/4 fade-up w-2/3 mx-auto font-bold"
+            >
+              <h1
+                class="lg:text-7xl md:text-3xl text-lg text-white text-center"
+              >
+                <i
+                  >YOU CAN GO THE <br />
+                  DISTANCE</i
+                >
+              </h1>
+              <p class="text-xl hidden lg:block text-white text-center md:mt-8">
+                Clients of our gym receive not only necessary equipment for
+                their workouts but also friendly support in achieving their
+                number one training goal.
+              </p>
+              <div class="flex justify-center md:mt-10">
+                <button
+                  class="md:px-5 px-2 md:py-3 py-1 text-xs md:text-sm rounded-md btn-animate"
+                >
+                  GET STARTED
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

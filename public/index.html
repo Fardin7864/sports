@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar Start  -->
+      <div
+        class="navbar text-white lg:absolute bg-[#191919] lg:bg-transparent z-10"
+      >
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-transparent rounded-box w-52"
+            >
+              <li class="text-[#FDCC25]"><a>HOME</a></li>
+              <li><a>ABOUT COACH</a></li>
+              <li><a>CONTACT US</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl"
+            ><img src="./upload_images/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-[#FDCC25]"><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT COACH</a></li>
+            <li><a>CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <!-- <a class="btn">Button</a> -->
+        </div>
+      </div>
+      <!-- Carousel -->
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="https://livedemo00.template-help.com/wt_51682/images/background-01-1920x750.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide3"
+              class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+              >❮</a
+            >
+            <a
+              href="#slide2"
+              class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+              >❯</a
+            >
+          </div>
+          <!-- Texts on carousel -->
+          <div
+            class="absolute flex flex-col transform -translate-y-1/2 left-5 right-5 top-1/4 fade-up w-2/3 mx-auto font-bold"
+          >
+            <h1 class="lg:text-7xl md:text-3xl text-lg text-white text-center">
+              <i>NO PAIN NO GAIN</i>
+            </h1>
+            <p class="text-xl hidden lg:block text-white text-center md:mt-8">
+              Having a perfect body requires a lot of training. Nice-looking
+              body and powerful organism are interconnected – and we can help
+              you with both.
+            </p>
+            <div class="flex justify-center md:mt-10">
+              <button
+                class="md:px-8 px-2 md:py-2 py-1 text-xs md:text-sm rounded-md btn-animate bg-[#d01919]"
+              >
+                GET STARTED
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="https://livedemo00.template-help.com/wt_51682/images/background-02-1920x750.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide1"
+              class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+              >❮</a
+            >
+            <a
+              href="#slide3"
+              class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+              >❯</a
+            >
+          </div>
+          <div
+            class="absolute flex flex-col transform -translate-y-1/2 left-5 right-5 top-1/4 fade-up w-2/3 mx-auto font-bold"
+          >
+            <h1 class="lg:text-7xl md:text-3xl text-lg text-white text-center">
+              <i>NEVER GIVE UP</i>
+            </h1>
+            <p class="text-xl hidden lg:block text-white text-center md:mt-8">
+              Every bodybuilder requires a lot of dedication and effort to shape
+              his/her body into something to be proud of. We can give you
+              everything you need for
+            </p>
+            <div class="flex justify-center md:mt-10">
+              <button
+                class="md:px-8 px-2 md:py-2 py-1 text-xs md:text-sm rounded-md btn-animate bg-[#d01919]"
+              >
+                GET STARTED
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="https://livedemo00.template-help.com/wt_51682/images/background-03-1920x750.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide2"
+              class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+              >❮</a
+            >
+            <a
+              href="#slide1"
+              class="btn btn-circle bg-transparent border-none text-white text-xl md:text-3xl"
+              >❯</a
+            >
+          </div>
+          <!-- Texts on carousel -->
+          <div
+            class="absolute flex flex-col transform -translate-y-1/2 left-5 right-5 top-1/4 fade-up w-2/3 mx-auto font-bold"
+          >
+            <h1 class="lg:text-7xl md:text-3xl text-lg text-white text-center">
+              <i
+                >YOU CAN GO THE <br />
+                DISTANCE</i
+              >
+            </h1>
+            <p class="text-xl hidden lg:block text-white text-center md:mt-8">
+              Clients of our gym receive not only necessary equipment for their
+              workouts but also friendly support in achieving their number one
+              training goal.
+            </p>
+            <div class="flex justify-center md:mt-10">
+              <button
+                class="md:px-8 px-2 md:py-2 py-1 text-xs md:text-sm rounded-md btn-animate bg-[#d01919]"
+              >
+                GET STARTED
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Category section -->
+    <section>
+      <h2 class="text-center mt-16 text-5xl font-bold text-gray-700">
+        Welcome
+      </h2>
+      <div class="border-2 w-16 mx-auto mt-5 border-[#d01919]"></div>
+      <p class="text-center my-8 text-gray-500 text-base px-8">
+        Welcome to Intense Gym! We hope that you will appreciate our services
+        and opportunities we offer our loyal and potential customers. Here are
+        some of them:
+      </p>
+      <div
+        class="px-5 grid grid-cols-1 lg:grid-cols-3 gap-14 items-center md:w-3/4 mx-auto my-20"
+      >
+        <!-- card 1 -->
+        <div
+          class="px-5 pb-10 text-center category-card shadow-xl border border-[#FDCC25] rounded-xl flex flex-col items-center"
+        >
+          <img
+            src="./upload_images/person-378368_1280.png"
+            alt=""
+            class="bg-white relative -top-9 w-16 border border-[#FDCC25] p-2 rounded-full"
+          />
+          <h3 class="text-[#d01919] text-3xl font-bold mb-3">
+            Qualified Coaches
+          </h3>
+          <p>
+            Our coaches have years of experience in various types of fitness and
+            sports.
+          </p>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="px-5 pb-10 text-center category-card shadow-xl border border-[#FDCC25] rounded-xl flex flex-col items-center"
+        >
+          <img
+            src="./upload_images/thumbs-up-6004215_1280.png"
+            alt=""
+            class="bg-white relative -top-9 w-16 border border-[#FDCC25] p-2 rounded-full"
+          />
+          <h3 class="text-[#d01919] text-3xl font-bold mb-3">
+            Qualified Coaches
+          </h3>
+          <p>
+            Our coaches have years of experience in various types of fitness and
+            sports.
+          </p>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="px-5 pb-10 text-center category-card shadow-xl border border-[#FDCC25] rounded-xl flex flex-col items-center"
+        >
+          <img
+            src="./upload_images/barbell-7834321_1280.jpg"
+            alt=""
+            class="bg-white relative -top-9 w-16 border border-[#FDCC25] p-2 rounded-full"
+          />
+          <h3 class="text-[#d01919] text-3xl font-bold mb-3">
+            Qualified Coaches
+          </h3>
+          <p>
+            Our coaches have years of experience in various types of fitness and
+            sports.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="grid grid-cols-1 lg:grid-cols-4">
+      <div class="text-white hover:text-[#FDCC25]">
+        <img
+          src="https://livedemo00.template-help.com/wt_51682/images/home-01-480x480.jpg"
+          alt=""
+          class="w-full"
+        />
+        <div class="relative -top-40 flex flex-col gap-5 items-center">
+          <h5 class="text-3xl font-extrabold">Bodybuilding</h5>
+          <button
+            class="md:px-10 px-2 md:py-3 py-1 text-xs md:text-xl font-bold rounded-md btn-animate text-gray-200 bg-[#d01919] hover:-translate-y-2"
+          >
+            FREE FIRST LESSON
+          </button>
+        </div>
+      </div>
+      <div class="text-white hover:text-[#FDCC25]">
+        <img
+          src="https://livedemo00.template-help.com/wt_51682/images/home-02-480x480.jpg"
+          alt=""
+          class="w-full"
+        />
+        <div
+          id="fitness"
+          class="relative -top-40 flex flex-col gap-5 items-center"
+        >
+          <h5 class="text-3xl font-extrabold">Fitness</h5>
+          <button
+            class="md:px-10 px-2 md:py-3 py-1 text-xs md:text-xl font-bold rounded-md btn-animate text-gray-200 bg-[#d01919] hover:-translate-y-2"
+          >
+            FREE FIRST LESSON
+          </button>
+        </div>
+      </div>
+      <div class="text-white hover:text-[#FDCC25]">
+        <img
+          src="https://livedemo00.template-help.com/wt_51682/images/home-03-480x480.jpg"
+          alt=""
+          class="w-full"
+        />
+        <div
+          id="crossfit"
+          class="relative -top-40 flex flex-col gap-5 items-center"
+        >
+          <h5 class="text-3xl font-extrabold">Crossfit</h5>
+          <button
+            class="md:px-10 px-2 md:py-3 py-1 text-xs md:text-xl font-bold rounded-md btn-animate text-gray-200 bg-[#d01919] hover:-translate-y-2"
+          >
+            FREE FIRST LESSON
+          </button>
+        </div>
+      </div>
+      <div class="text-white hover:text-[#FDCC25]">
+        <img
+          src="https://livedemo00.template-help.com/wt_51682/images/home-04-480x480.jpg"
+          alt=""
+          class="w-full"
+        />
+        <div
+          id="studio"
+          class="relative -top-40 flex flex-col gap-5 items-center"
+        >
+          <h5 class="text-3xl font-extrabold">Circle Studio</h5>
+          <button
+            class="md:px-10 px-2 md:py-3 py-1 text-xs md:text-xl font-bold rounded-md btn-animate text-gray-200 bg-[#d01919] hover:-translate-y-2"
+          >
+            FREE FIRST LESSON
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coach section -->
+    <section>
+      <h2 class="text-center mt-16 text-5xl font-bold text-gray-700">
+        Coaches
+      </h2>
+      <div class="border w-16 mx-auto mt-5 border-[#d01919]"></div>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-4 my-20 mx-auto gap-3 md:px-8 px-5"
+      >
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://livedemo00.template-help.com/wt_51682/images/user-ryan-jackson-270x270.jpg"
+              alt="Shoes"
+              class="w-full hover:opacity-60"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Ryan Jackson <span class="text-[#d01919]">CrossFit</span>
+            </h2>
+            <p>
+              He has more than 10 years of experience in CrossFit and
+              professional athletics.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://livedemo00.template-help.com/wt_51682/images/user-emily-perkins-270x270.jpg"
+              alt="Shoes"
+              class="w-full hover:opacity-60"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Emily Perkins <span class="text-[#d01919]">Fitness</span>
+            </h2>
+            <p>
+              Emily can teach you all peculiarities of fitness and aerobics in a
+              group or individually.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://livedemo00.template-help.com/wt_51682/images/user-samantha-ruiz-270x270.jpg"
+              alt="Shoes"
+              class="w-full hover:opacity-60"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Samantha Ruiz <span class="text-[#d01919]">Yoga</span>
+            </h2>
+            <p>
+              Our leading yoga coach, Samantha, will help you reach full harmony
+              with your body.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://livedemo00.template-help.com/wt_51682/images/user-austin-ortiz-270x270.jpg"
+              alt="Shoes"
+              class="w-full hover:opacity-60"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Austin Ortiz <span class="text-[#d01919]">Bodybuilding</span>
+            </h2>
+            <p>
+              Austin is not only our most called-for coach, but also a winner of
+              many championships.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fetched information -->
+    <div
+      class="hero min-h-screen"
+      style="
+        background-image: url(https://i.ibb.co/JpWYSFQ/milky-way-2695569-1920.jpg);
+      "
+    >
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div id="data" class="max-w-md"></div>
+      </div>
+    </div>
+
+    <!-- Image upload section -->
+
+    <section class="my-20 flex items-center">
+      <form id="uploadForm" enctype="multipart/form-data" class=" shadow-xl p-8 rounded-md border mx-auto">
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/*"
+          onchange="previewImage()"
+        />
+        <button type="button" class="md:px-10 px-2 md:py-3 py-1 text-xs md:text-xl font-bold rounded-md btn-animate text-gray-200 bg-[#d01919] hover:-translate-y-2" onclick="uploadImage()">Upload</button>
+      </form>
+      <div id="preview"></div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // Function to fetch data using jQuery
+      function fetchData() {
+        // URL of the Numbers API
+        var url = "http://numbersapi.com/1/30/date?json";
+
+        // Making an AJAX request using jQuery
+        $.ajax({
+          url: url,
+          method: "GET",
+          success: function (response) {
+            // Accessing the fact from the response
+            var fact = response.text;
+            var year = "Year : " + response.year;
+            var number = "Number : " + response.number;
+
+            // Displaying the fact on the HTML page
+            $("#data").html(
+              "<p class='mb-5 text-xl font-bold'>" +
+                fact +
+                "</p>" +
+                "<p class='mb-5 text-sm font-bold'>" +
+                year +
+                "</p>" +
+                "<p class='mb-5 text-sm font-bold'>" +
+                number +
+                "</p>"
+            );
+          },
+          error: function (xhr, status, error) {
+            console.error("Error fetching data:", error);
+          },
+        });
+      }
+
+      // Call the fetchData function when the page loads
+      $(document).ready(function () {
+        fetchData();
+      });
+    </script>
+<script>
+  function previewImage() {
+      const fileInput = document.getElementById('fileInput');
+      const preview = document.getElementById('preview');
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function(e) {
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          img.style.maxWidth = '300px'; // Adjust image size as needed
+          preview.innerHTML = '';
+          preview.appendChild(img);
+      };
+
+      reader.readAsDataURL(file);
+  }
+
+  function uploadImage() {
+      const fileInput = document.getElementById('fileInput');
+      const file = fileInput.files[0];
+      const formData = new FormData();
+      formData.append('image', file);
+
+      fetch('/upload', {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Failed to upload image');
+          }
+          return response.text();
+      })
+      .then(message => {
+          alert(message); // Show success message
+          document.getElementById('uploadForm').reset(); // Clear form
+          document.getElementById('preview').innerHTML = ''; // Clear preview
+      })
+      .catch(error => {
+          console.error('Error uploading image:', error);
+          alert('Error uploading image. Please try again later.');
+      });
+  }
+</script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.fade-up {
+    opacity: 0; /* Initially invisible */
+    animation: fadeUpAnimation 2s ease-in-out forwards; /* Animation properties */
+  }
+  
+
+  .category-card:hover{
+    animation: fadeUpAnimation 2s ease-in-out forwards;
+  }
+
+  ul li a {
+    /* color: #FDCC25; */
+    font-weight: 600;
+  }
+  
+  .btn-animate {
+    background-color: #d01919;
+    /* border: 2px solid #d01919; */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s ease-in-out;
+  }
+
+  .btn-animate:hover {
+    background-color: #FDCC25;
+    color: white;
+    animation: pulse 1s infinite alternate;
+  }
+
+  
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes fadeUpAnimation {
+    from {
+      opacity: 0; /* Start from fully transparent */
+      transform: translateY(40px); /* Start slightly below */
+    }
+    to {
+      opacity: 1; /* Fade to fully visible */
+      transform: translateY(0); /* Move to original position */
+    }
+  }
